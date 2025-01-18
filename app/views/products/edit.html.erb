@@ -1,0 +1,5 @@
+<h2><%= @product.name %></h2>
+
+<%= render "form", product: @product %>
+<%= link_to "Cancel", products_path %>
+<%= button_to "Delete", @product, method: :delete, data: { turbo_confirm: "Are you sure?" } %>
